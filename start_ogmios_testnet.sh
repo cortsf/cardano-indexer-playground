@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-./ogmios/result/bin/ogmios \
-    --node-socket ./cardano-node-testnet/node.socket \
-    --node-config ./cardano-node-testnet/config.json \
+./bin/ogmios \
+    --node-socket ./data/cardano-node-testnet/node.socket \
+    --node-config ./data/cardano-node-testnet/config.json \
 
 
 # Provides a bridge between cardano-node and WebSocket clients. Ogmios translates
