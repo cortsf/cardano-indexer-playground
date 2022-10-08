@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# ODC needs a running ogmios instance to work. Start it with ./start_ogmios_<network>.sh
+
 ./bin/ogmios-datum-cache \
     --db-port 5432 \
     --db-host localhost \
