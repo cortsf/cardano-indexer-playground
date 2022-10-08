@@ -1,0 +1,102 @@
+{-# LANGUAGE ScopedTypeVariables #-}
+{-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE RecordWildCards #-}
+{-# LANGUAGE PartialTypeSignatures #-}
+
+module Main where
+
+import Data.Typeable (Proxy(..))
+import Test.Hspec
+import Test.Hspec.QuickCheck
+
+import PropMime
+import Instances ()
+
+import Koios.Model
+import Koios.MimeTypes
+
+main :: IO ()
+main =
+  hspec $ modifyMaxSize (const 10) $ do
+    describe "JSON instances" $ do
+      pure ()
+      propMimeEq MimeJSON (Proxy :: Proxy AccountAddressesInner)
+      propMimeEq MimeJSON (Proxy :: Proxy AccountAssetsInner)
+      propMimeEq MimeJSON (Proxy :: Proxy AccountAssetsInnerAssetsInner)
+      propMimeEq MimeJSON (Proxy :: Proxy AccountAssetsInnerAssetsInnerAssetsInner)
+      propMimeEq MimeJSON (Proxy :: Proxy AccountHistoryInner)
+      propMimeEq MimeJSON (Proxy :: Proxy AccountHistoryInnerHistoryInner)
+      propMimeEq MimeJSON (Proxy :: Proxy AccountInfoInner)
+      propMimeEq MimeJSON (Proxy :: Proxy AccountInfoPostRequest)
+      propMimeEq MimeJSON (Proxy :: Proxy AccountListInner)
+      propMimeEq MimeJSON (Proxy :: Proxy AccountRewardsInner)
+      propMimeEq MimeJSON (Proxy :: Proxy AccountRewardsInnerRewardsInner)
+      propMimeEq MimeJSON (Proxy :: Proxy AccountUpdatesInner)
+      propMimeEq MimeJSON (Proxy :: Proxy AccountUpdatesInnerUpdatesInner)
+      propMimeEq MimeJSON (Proxy :: Proxy AddressAssetsInner)
+      propMimeEq MimeJSON (Proxy :: Proxy AddressInfoInner)
+      propMimeEq MimeJSON (Proxy :: Proxy AddressInfoInnerUtxoSetInner)
+      propMimeEq MimeJSON (Proxy :: Proxy AddressInfoPostRequest)
+      propMimeEq MimeJSON (Proxy :: Proxy AddressTxsInner)
+      propMimeEq MimeJSON (Proxy :: Proxy AddressTxsPostRequest)
+      propMimeEq MimeJSON (Proxy :: Proxy AssetAddressListInner)
+      propMimeEq MimeJSON (Proxy :: Proxy AssetHistoryInner)
+      propMimeEq MimeJSON (Proxy :: Proxy AssetHistoryInnerMintingTxsInner)
+      propMimeEq MimeJSON (Proxy :: Proxy AssetInfoInner)
+      propMimeEq MimeJSON (Proxy :: Proxy AssetInfoInnerMintingTxMetadataInner)
+      propMimeEq MimeJSON (Proxy :: Proxy AssetInfoInnerTokenRegistryMetadata)
+      propMimeEq MimeJSON (Proxy :: Proxy AssetListInner)
+      propMimeEq MimeJSON (Proxy :: Proxy AssetListInnerAssetNames)
+      propMimeEq MimeJSON (Proxy :: Proxy AssetPolicyInfoInner)
+      propMimeEq MimeJSON (Proxy :: Proxy AssetSummaryInner)
+      propMimeEq MimeJSON (Proxy :: Proxy AssetTxsInner)
+      propMimeEq MimeJSON (Proxy :: Proxy BlockInfoInner)
+      propMimeEq MimeJSON (Proxy :: Proxy BlockInfoPostRequest)
+      propMimeEq MimeJSON (Proxy :: Proxy BlockTxsInner)
+      propMimeEq MimeJSON (Proxy :: Proxy BlocksInner)
+      propMimeEq MimeJSON (Proxy :: Proxy CredentialTxsPostRequest)
+      propMimeEq MimeJSON (Proxy :: Proxy EpochInfoInner)
+      propMimeEq MimeJSON (Proxy :: Proxy EpochParamsInner)
+      propMimeEq MimeJSON (Proxy :: Proxy GenesisInner)
+      propMimeEq MimeJSON (Proxy :: Proxy NativeScriptListInner)
+      propMimeEq MimeJSON (Proxy :: Proxy PlutusScriptListInner)
+      propMimeEq MimeJSON (Proxy :: Proxy PoolBlocksInner)
+      propMimeEq MimeJSON (Proxy :: Proxy PoolDelegatorsInner)
+      propMimeEq MimeJSON (Proxy :: Proxy PoolHistoryInfoInner)
+      propMimeEq MimeJSON (Proxy :: Proxy PoolInfoInner)
+      propMimeEq MimeJSON (Proxy :: Proxy PoolInfoInnerMetaJson)
+      propMimeEq MimeJSON (Proxy :: Proxy PoolInfoInnerRelaysInner)
+      propMimeEq MimeJSON (Proxy :: Proxy PoolInfoPostRequest)
+      propMimeEq MimeJSON (Proxy :: Proxy PoolListInner)
+      propMimeEq MimeJSON (Proxy :: Proxy PoolMetadataInner)
+      propMimeEq MimeJSON (Proxy :: Proxy PoolMetadataPostRequest)
+      propMimeEq MimeJSON (Proxy :: Proxy PoolRelaysInner)
+      propMimeEq MimeJSON (Proxy :: Proxy PoolUpdatesInner)
+      propMimeEq MimeJSON (Proxy :: Proxy ScriptRedeemersInner)
+      propMimeEq MimeJSON (Proxy :: Proxy ScriptRedeemersInnerRedeemersInner)
+      propMimeEq MimeJSON (Proxy :: Proxy ScriptRedeemersInnerRedeemersInnerUnitMemValue)
+      propMimeEq MimeJSON (Proxy :: Proxy TipInner)
+      propMimeEq MimeJSON (Proxy :: Proxy TotalsInner)
+      propMimeEq MimeJSON (Proxy :: Proxy TxInfoInner)
+      propMimeEq MimeJSON (Proxy :: Proxy TxInfoInnerAssetsMintedInner)
+      propMimeEq MimeJSON (Proxy :: Proxy TxInfoInnerCertificatesInner)
+      propMimeEq MimeJSON (Proxy :: Proxy TxInfoInnerMetadataInner)
+      propMimeEq MimeJSON (Proxy :: Proxy TxInfoInnerNativeScriptsInner)
+      propMimeEq MimeJSON (Proxy :: Proxy TxInfoInnerOutputsInner)
+      propMimeEq MimeJSON (Proxy :: Proxy TxInfoInnerOutputsInnerAssetListInner)
+      propMimeEq MimeJSON (Proxy :: Proxy TxInfoInnerOutputsInnerInlineDatum)
+      propMimeEq MimeJSON (Proxy :: Proxy TxInfoInnerOutputsInnerPaymentAddr)
+      propMimeEq MimeJSON (Proxy :: Proxy TxInfoInnerOutputsInnerReferenceScript)
+      propMimeEq MimeJSON (Proxy :: Proxy TxInfoInnerPlutusContractsInner)
+      propMimeEq MimeJSON (Proxy :: Proxy TxInfoInnerPlutusContractsInnerInput)
+      propMimeEq MimeJSON (Proxy :: Proxy TxInfoInnerPlutusContractsInnerInputRedeemer)
+      propMimeEq MimeJSON (Proxy :: Proxy TxInfoInnerPlutusContractsInnerInputRedeemerDatum)
+      propMimeEq MimeJSON (Proxy :: Proxy TxInfoInnerPlutusContractsInnerInputRedeemerUnit)
+      propMimeEq MimeJSON (Proxy :: Proxy TxInfoInnerWithdrawalsInner)
+      propMimeEq MimeJSON (Proxy :: Proxy TxInfoInnerWithdrawalsInnerStakeAddr)
+      propMimeEq MimeJSON (Proxy :: Proxy TxInfoPostRequest)
+      propMimeEq MimeJSON (Proxy :: Proxy TxMetadataInner)
+      propMimeEq MimeJSON (Proxy :: Proxy TxMetalabelsInner)
+      propMimeEq MimeJSON (Proxy :: Proxy TxStatusInner)
+      propMimeEq MimeJSON (Proxy :: Proxy TxUtxosInner)
+      
