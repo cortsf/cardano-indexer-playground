@@ -19,3 +19,9 @@
 [submodule "repos/ogmios"]
 	path = repos/ogmios
 	url = https://github.com/mlabs-haskell/ogmios
+[submodule "repos/cardano-node"]
+	path = repos/cardano-node
+	url = https://github.com/input-output-hk/cardano-node
+[submodule "repos/cardano-db-sync"]
+	path = repos/cardano-db-sync
+	url = https://github.com/input-output-hk/cardano-db-sync
