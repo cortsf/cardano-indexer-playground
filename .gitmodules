@@ -1,0 +1,21 @@
+[submodule "repos/kupo"]
+	path = repos/kupo
+	url = https://github.com/CardanoSolutions/kupo
+[submodule "repos/carp"]
+	path = repos/carp
+	url = https://github.com/dcSpark/carp
+[submodule "repos/ogmios-datum-cache"]
+	path = repos/ogmios-datum-cache
+	url = https://github.com/mlabs-haskell/ogmios-datum-cache
+[submodule "repos/oura"]
+	path = repos/oura
+	url = https://github.com/txpipe/oura
+[submodule "repos/scrolls"]
+	path = repos/scrolls
+	url = https://github.com/txpipe/scrolls
+[submodule "repos/koios-cli"]
+	path = repos/koios-cli
+	url = https://github.com/cardano-community/koios-cli
+[submodule "repos/ogmios"]
+	path = repos/ogmios
+	url = https://github.com/mlabs-haskell/ogmios
