@@ -16,3 +16,6 @@
 [submodule "repos/koios-cli"]
 	path = repos/koios-cli
 	url = https://github.com/cardano-community/koios-cli
+[submodule "repos/ogmios"]
+	path = repos/ogmios
+	url = https://github.com/mlabs-haskell/ogmios
