@@ -2,7 +2,7 @@
 
 0. git submodule init && git submodule update
 1. Use build scripts to build project. Executables wil be installed in ./bin
-2. Start node if needed. Check node sync percentage with ./check-node-sync-<network>.
+2. Start node if needed. Check node sync percentage with ./check-node-sync-<*network*>.
 3. (Optional) create database if need
 4. Use start scripts. 
 
