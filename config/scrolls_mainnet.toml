@@ -1,0 +1,18 @@
+[source]
+type = "N2N"
+address = "relays-new.cardano-mainnet.iohk.io:3001"
+
+[[reducers]]
+type = "UtxoByAddress"
+filter = ["addr1qy8jecz3nal788f8t2zy6vj2l9ply3trpnkn2xuvv5rgu4m7y853av2nt8wc33agu3kuakvg0kaee0tfqhgelh2eeyyqgxmxw3"]
+
+[storage]
+type = "Redis"
+connection_params = "redis://127.0.0.1:6379"
+
+[chain]
+type = "Mainnet"
+
+[intersect]
+type = "Point"
+value = [57867490, "c491c5006192de2c55a95fb3544f60b96bd1665accaf2dfa2ab12fc7191f016b"]

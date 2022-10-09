@@ -2,10 +2,14 @@
 type = "N2N"
 address = "preprod-node.world.dev.cardano.org:30000"
 
+# enable the "UTXO by Address" collection
 [[reducers]]
-type = "AddressByAdaHandle"
-key_prefix = "AddressByAdaHandle"
-policy_id_hex = "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a"
+type = "UtxoByAddress"
+# you can optionally prefix the keys in the collection
+key_prefix = "c1"
+# you can optionally only process UTXO from a set of predetermined addresses
+filter = ["addr1qy8jecz3nal788f8t2zy6vj2l9ply3trpnkn2xuvv5rgu4m7y853av2nt8wc33agu3kuakvg0kaee0tfqhgelh2eeyyqgxmxw3"]
+
 
 [storage]
 type = "Redis"
