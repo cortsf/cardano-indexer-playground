@@ -1,3 +1,6 @@
+# Description
+**WIP** Collection of easy to use scripts to test and experiment with cardano chain indexers.
+
 # Usage
 
 0. init submodules in `./repos` with: `git submodule init && git submodule update`
