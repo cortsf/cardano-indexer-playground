@@ -62,7 +62,6 @@
 ```
  services.redis.servers."scrolls" = {
     enable = true;
-    openFirewall = true;
     port=6379;
   };
 ```
