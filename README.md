@@ -4,7 +4,7 @@
 1. Use `build_<something>.sh` scripts to build projects. Executables will be installed in `./bin`
 2. Start node with `start_node_<network>.sh`. Check node sync percentage with `./check-node-sync-<network>.sh`.
 3. (Optional) create database if needed
-4. Use `start_<something>.sh` scripts. 
+4. Use `start_<indexer>.sh` scripts. 
 5. Make queries.
 
 # Project structure
