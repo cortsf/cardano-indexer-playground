@@ -28,9 +28,6 @@ https://github.com/dcSpark/carp/commit/98cec28b5cd17cb7040461091aa2382552169e92
 ## Cargo authentication error
 https://sathias.gitlab.io/posts/2021/08/19/rust-cargo-resolve-authentication-issue.html
 
-# Notes
-OpenAPI generated clients are experimental and (most likely) won't work.
-
 # Postgres databases (nixos)
 
 ```
@@ -60,3 +57,6 @@ OpenAPI generated clients are experimental and (most likely) won't work.
     ];
   };
 ```
+
+# Notes
+OpenAPI generated clients are experimental and (most likely) won't work.
