@@ -1,4 +1,4 @@
-# get data from a relay node
+# get data from remote relay node
 # [source]
 # type = "N2N"
 # address = "relays-new.cardano-mainnet.iohk.io:3001"
@@ -6,7 +6,7 @@
 # get data from local node?? 
 [source]
 type = "N2C"
-path = "/home/fcortesi/cardano-indexer-playground/data/cardano-node-mainnet/node.socket"
+path = "data/cardano-node-mainnet/node.socket"
 
 [[reducers]]
 type = "UtxoByAddress"
@@ -22,7 +22,7 @@ key_prefix = "c3"
 
 [storage]
 type = "Redis"
-connection_params = "redis://redis:6379"
+connection_params = "redis://127.0.0.1:6379"
 
 [intersect]
 type = "Point"
