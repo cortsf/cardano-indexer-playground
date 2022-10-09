@@ -1,5 +1,5 @@
 # Description
-**WIP** Collection of easy to use scripts to test and experiment with cardano chain indexers.
+**WIP** Collection of easy to use scripts to quickly setup and experiment with multiple cardano chain indexers.
 
 # Usage
 
