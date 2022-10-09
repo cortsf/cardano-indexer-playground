@@ -1,6 +1,6 @@
 # Usage
 
-0. init submodules in ./repos with: git submodule init && git submodule update
+0. init submodules in `./repos` with: `git submodule init && git submodule update`
 1. Use `build_<something>.sh` scripts to build projects. Executables will be installed in `./bin`
 2. Start node with `start_node_<network>.sh`. Check node sync percentage with `./check-node-sync-<network>.sh`.
 3. (Optional) create database if needed
