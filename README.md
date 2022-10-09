@@ -71,5 +71,5 @@
 # Notes
 OpenAPI generated clients are experimental and (most likely) won't work.
 
-# TO-DO (and probably, WONT-DO)
+# To-do (and probably, wont-do)
 - Nixify
