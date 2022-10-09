@@ -1,7 +1,7 @@
 # Usage
 
 0. init submodules in ./repo with: git submodule init && git submodule update
-1. Use build scripts to build projects. Executables wil be installed in ./bin
+1. Use build scripts to build projects. Executables will be installed in ./bin
 2. Start node if needed. Check node sync percentage with ./check-node-sync-<*network*>.
 3. (Optional) create database if needed
 4. Use start scripts. 
