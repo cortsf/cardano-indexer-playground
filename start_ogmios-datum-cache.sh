@@ -9,10 +9,11 @@
     --db-password odc \
     --db-name ogmios_datum_cache \
     --server-port 8027 \
-    --server-api "usr:pwd" \
+    --server-api "odcuser:odcpass" \
     --ogmios-address "localhost" \
     --ogmios-port 1337 \
 
+# ./bin/ogmios-datum-cache --db-port 5432 --db-host localhost --db-user odc --db-password odc --db-name ogmios_datum_cache --server-port 8027 --server-api "usr:pwd" --ogmios-address "localhost" --ogmios-port 1337 
 
 # Usage: ogmios-datum-cache (--db-port PORT --db-host HOST_NAME
 #                             --db-user USER_NAME [--db-password PASSWORD]
