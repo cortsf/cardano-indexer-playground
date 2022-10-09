@@ -60,9 +60,11 @@
 ```
 ### Redis
 ```
- services.redis.servers."scrolls" = {
-    enable = true;
-    port=6379;
+  services.redis.servers = {
+    scrolls = {
+      enable = true;
+      port=6379;
+    };
   };
 ```
 
