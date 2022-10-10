@@ -94,6 +94,7 @@
 
 #### Redis-cli
 - Get all keys: KEYS *
+- Get keys: SMEMBERS c1.addr1w8tqqyccvj7402zns2tea78d42etw520fzvf22zmyasjdtsv3e5rz
 - Clear database: FLUSHDB
 - Clear ALL databases:  FLUSHALL
 
