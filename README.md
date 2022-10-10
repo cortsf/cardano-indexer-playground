@@ -93,9 +93,9 @@
 ```
 
 #### Redis-cli
-Get all keys: KEYS *
-Clear database: FLUSHDB
-Clear ALL databases:  FLUSHALL
+- Get all keys: KEYS *
+- Clear database: FLUSHDB
+- Clear ALL databases:  FLUSHALL
 
 # Notes
 OpenAPI generated clients are experimental and (most likely) won't work.
