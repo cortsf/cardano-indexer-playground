@@ -26,7 +26,7 @@
 
 # Era boundaries
 ### Mainnet
-| Era bound          | SlotNo    | Hashi                                                            |
+| Era bound          | SlotNo    | Hash                                                             |
 |--------------------|-----------|------------------------------------------------------------------|
 | Last Byron Block   | 4492799   | f8084c61b6a238acec985b59310b6ecec49c0ab8352249afd7268da5cff2a457 |
 | Last Shelley Block | 16588737  | 4e9bbbb67e3ae262133d94c3da5bffce7b1127fc436e7433b87668dba34c354a |
@@ -34,7 +34,7 @@
 | Last Mary Block    | 39916796  | e72579ff89dc9ed325b723a33624b596c08141c7bd573ecfff56a1f7229e4d09 |
 
 ### Testnet
-| Era bound          | SlotNo    | Hashi                                                            |
+| Era bound          | SlotNo    | Hash                                                             |
 |--------------------|-----------|------------------------------------------------------------------|
 | Last Byron block   | 1598399   | 7e16781b40ebf8b6da18f7b5e8ade855d6738095ef2f1c58c77e88b6e45997a4 |
 | Last Shelley block | 13694363  | b596f9739b647ab5af901c8fc6f75791e262b0aeba81994a1d622543459734f2 |
