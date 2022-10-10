@@ -10,7 +10,8 @@ path = "data/cardano-node-mainnet/node.socket"
 
 [[reducers]]
 type = "UtxoByAddress"
-key_prefix = "c1"
+# key_prefix = "c1"
+filter = ["stake1uy6f5wg695g33ck8emlyx97vyfxyw8pmvgu5aq6hxgxscgg9s58ah"]
 
 [[reducers]]
 type = "PointByTx"
@@ -26,7 +27,7 @@ connection_params = "redis://127.0.0.1:6379"
 
 [intersect]
 type = "Point"
-value = [57867490, "c491c5006192de2c55a95fb3544f60b96bd1665accaf2dfa2ab12fc7191f016b"]
+value = [39916796, "e72579ff89dc9ed325b723a33624b596c08141c7bd573ecfff56a1f7229e4d09"] # last mary block
 
 [chain]
 type = "Mainnet"
