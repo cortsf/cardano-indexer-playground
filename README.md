@@ -34,9 +34,6 @@
 | Last Shelley Block | 16588737  | 4e9bbbb67e3ae262133d94c3da5bffce7b1127fc436e7433b87668dba34c354a |
 | Last Allegra Block | 23068793  | 69c44ac1dda2ec74646e4223bc804d9126f719b1c245dadc2ad65e8de1b276d7 |
 | Last Mary Block    | 39916796  | e72579ff89dc9ed325b723a33624b596c08141c7bd573ecfff56a1f7229e4d09 |
-| point_a            | 6780389   | 1f2e008918e5fb74a20d6522d216453daa5bd4b56a307d26c8555c454b289157 |
-
-* point_a is from 20/01/2022 and can be used to catch some tx's made with "smol_staking" wallet.
 
 ### Testnet era boundaries
 | Era bound          | SlotNo    | Hash                                                             |
