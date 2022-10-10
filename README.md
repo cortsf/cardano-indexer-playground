@@ -73,3 +73,4 @@ OpenAPI generated clients are experimental and (most likely) won't work.
 
 # To-do (and probably, wont-do)
 - Proper nixification
+- Benchmarks
