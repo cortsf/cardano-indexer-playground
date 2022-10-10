@@ -26,12 +26,12 @@
 
 # Era boundaries
 ### Mainnet
-| Era bound         | SlotNo    | Hashi                                                            |
-|-------------------|-----------|------------------------------------------------------------------|
-| Last Byron Block  |4492799    | f8084c61b6a238acec985b59310b6ecec49c0ab8352249afd7268da5cff2a457 |
-| Last Shelley Block|16588737   | 4e9bbbb67e3ae262133d94c3da5bffce7b1127fc436e7433b87668dba34c354a |
-| Last Allegra Block|23068793   | 69c44ac1dda2ec74646e4223bc804d9126f719b1c245dadc2ad65e8de1b276d7 |
-| Last Mary Block   |39916796   |e72579ff89dc9ed325b723a33624b596c08141c7bd573ecfff56a1f7229e4d09  |
+| Era bound          | SlotNo    | Hashi                                                            |
+|--------------------|-----------|------------------------------------------------------------------|
+| Last Byron Block   |4492799    | f8084c61b6a238acec985b59310b6ecec49c0ab8352249afd7268da5cff2a457 |
+| Last Shelley Block |16588737   | 4e9bbbb67e3ae262133d94c3da5bffce7b1127fc436e7433b87668dba34c354a |
+| Last Allegra Block |23068793   | 69c44ac1dda2ec74646e4223bc804d9126f719b1c245dadc2ad65e8de1b276d7 |
+| Last Mary Block    |39916796   |e72579ff89dc9ed325b723a33624b596c08141c7bd573ecfff56a1f7229e4d09  |
 
 ### Testnet
 | Era bound          | SlotNo    | Hashi                                                            |
