@@ -12,8 +12,9 @@ path = "data/cardano-node-mainnet/node.socket"
 type = "UtxoByAddress"
 # key_prefix = "smol_staking" # Use this in redis-cli to find keys
 # addr1qxkwuk0fsg425h8tkfyurhj85gj0h9wy8trflh5dcey73cp5ngu35tg3rr3v0nh7gvtucgjvguwrkc3ef6p4wvsdpsssl5uzp4
-filter = ["addr1qxkwuk0fsg425h8tkfyurhj85gj0h9wy8trflh5dcey73cp5ngu35tg3rr3v0nh7gvtucgjvguwrkc3ef6p4wvsdpsssl5uzp4"]
-# filter = ["stake1uy6f5wg695g33ck8emlyx97vyfxyw8pmvgu5aq6hxgxscgg9s58ah"]
+filter = ["addr1qxkwuk0fsg425h8tkfyurhj85gj0h9wy8trflh5dcey73cp5ngu35tg3rr3v0nh7gvtucgjvguwrkc3ef6p4wvsdpsssl5uzp4"] # smolstaking fulladdr
+# filter = ["stake1uy6f5wg695g33ck8emlyx97vyfxyw8pmvgu5aq6hxgxscgg9s58ah"] # smollstaking
+# filter = ["addr1qygpgjexen28a8ev52xhhxv8l3jdak4flyk5t02dyyuskp9m6nyclmxjeuqxlvl8p0ldg0xfzdrg0s9k6uwglcu9vwtshxvnsy"]
 
 
 ## # CRAWLED THIS ONE (smolStaking):
@@ -21,9 +22,24 @@ filter = ["addr1qxkwuk0fsg425h8tkfyurhj85gj0h9wy8trflh5dcey73cp5ngu35tg3rr3v0nh7
 ## filter = ["addr1qxkwuk0fsg425h8tkfyurhj85gj0h9wy8trflh5dcey73cp5ngu35tg3rr3v0nh7gvtucgjvguwrkc3ef6p4wvsdpsssl5uzp4"]
 ## # FROM THIS POINT:
 ## value = [54779886, "d677f31716590dfae1f4665af206afd2a2fb9712298cd3f59184bcc05ea04e56"]
-## # UP TO THIS POINT:
+## # UP TO THIS POINT (no results):
 ## [2022-10-11T15:59:02Z INFO  scrolls::storage::redis] new cursor saved to redis 73849271,207ca82bf7a0da438de0e50064a183179be2cc8239b56352de078fa4fc588210
 
+
+# UtxoByAddress(utxo_by_address::Config),
+# PointByTx(point_by_tx::Config),
+# PoolByStake(pool_by_stake::Config),
+
+# #unstable?
+# AddressByTxo(address_by_txo::Config),
+# BalanceByAddress(balance_by_address::Config),
+# TxByHash(tx_by_hash::Config),
+# TxCountByAddress(tx_count_by_address::Config),
+# BlockHeaderByHash(block_header_by_hash::Config),
+# AddressByAdaHandle(address_by_ada_handle::Config),
+# LastBlockParameters(last_block_parameters::Config),
+# TxCountByNativeTokenPolicyId(tx_count_by_native_token_policy_id::Config),
+# AssetHoldersByAsset(asset_holders_by_asset_id::Config),
 
 
 # [[reducers]]
@@ -45,8 +61,8 @@ type = "Point"
 # value = [39916796, "e72579ff89dc9ed325b723a33624b596c08141c7bd573ecfff56a1f7229e4d09"] # last mary block
 # value = [51130917, "7bbbdf882dc15f86ada3d5efe1457e0b4966cd4dbbe228c991c5343c2cd295f8"] # POINT_A (see readme)
 # value = [54780884, "1a66b5db811147d3e9148545b52f1e39679bf4091b96c8a92a06bc443ef24819"] # POINT_B (see readme)
-value = [54779886, "d677f31716590dfae1f4665af206afd2a2fb9712298cd3f59184bcc05ea04e56"]
-
+# value = [54779886, "d677f31716590dfae1f4665af206afd2a2fb9712298cd3f59184bcc05ea04e56"]
+value = [73849271, "207ca82bf7a0da438de0e50064a183179be2cc8239b56352de078fa4fc588210"]
 
 [chain]
 type = "Mainnet"

@@ -1,0 +1,33 @@
+# DEMO USING RANDOM RECENT DATA
+###############################
+# INTERSECTION POINT:
+# tx: https://cexplorer.io/tx/ffab12ab35da5744fa7d33aca2767c5eaa8cc83a0724160f63eab34fd27c2196
+
+# POSTERIOR TX
+# tx: https://cexplorer.io/tx/1148a4741fc1ed039b827b3b890902e8603275e183b3a3157ad084cf8c8e6dd9
+
+[source]
+type = "N2C"
+path = "data/cardano-node-mainnet/node.socket"
+
+[[reducers]]
+type = "UtxoByAddress"
+filter = ["addr1qygpgjexen28a8ev52xhhxv8l3jdak4flyk5t02dyyuskp9m6nyclmxjeuqxlvl8p0ldg0xfzdrg0s9k6uwglcu9vwtshxvnsy"]
+
+[storage]
+type = "Redis"
+connection_params = "redis://127.0.0.1:6379"
+
+[intersect]
+type = "Point"
+
+value = [73939389, "445bc5988835694768d82191ba49e3368ca2a29892ceef80cd676150c398cbe7"]
+
+[chain]
+type = "Mainnet"
+
+[policy]
+missing_data = "Skip"
+
+
+
