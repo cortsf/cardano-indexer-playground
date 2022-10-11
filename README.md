@@ -36,7 +36,7 @@
 | Last Mary Block    | 39916796  | e72579ff89dc9ed325b723a33624b596c08141c7bd573ecfff56a1f7229e4d09 |
 | POINT_A            | 51130917  | 7bbbdf882dc15f86ada3d5efe1457e0b4966cd4dbbe228c991c5343c2cd295f8 |
 
-* POINT_A: Can be used to -efficiently- crawl a few tx's in address "smol_staking" (needs confirmation)
+* POINT_A: Can be used to -efficiently- crawl a few tx's in address "smol_staking" (in process of confirmation)
 
 ### Testnet era boundaries
 | Era bound          | SlotNo    | Block Hash                                                       |
