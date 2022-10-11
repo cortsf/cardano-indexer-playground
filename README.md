@@ -35,7 +35,9 @@
 | Last Allegra Block | 23068793  | 69c44ac1dda2ec74646e4223bc804d9126f719b1c245dadc2ad65e8de1b276d7 |
 | Last Mary Block    | 39916796  | e72579ff89dc9ed325b723a33624b596c08141c7bd573ecfff56a1f7229e4d09 |
 | POINT_A            | 51130917  | 7bbbdf882dc15f86ada3d5efe1457e0b4966cd4dbbe228c991c5343c2cd295f8 |
+| POINT_B            | 54780884  | 1a66b5db811147d3e9148545b52f1e39679bf4091b96c8a92a06bc443ef24819 |
 
+* POINT_A: Can be used to -efficiently- crawl a few tx's in address "smol_staking" (in process of confirmation)
 * POINT_A: Can be used to -efficiently- crawl a few tx's in address "smol_staking" (in process of confirmation)
 
 ### Testnet era boundaries
