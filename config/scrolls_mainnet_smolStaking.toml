@@ -1,0 +1,48 @@
+[source]
+type = "N2N"
+address = "relays-new.cardano-mainnet.iohk.io:3001"
+
+# [source]
+# type = "N2C"
+# path = "data/cardano-node-mainnet/node.socket"
+
+[[reducers]]
+type = "UtxoByAddress"
+filter = ["addr1qxkwuk0fsg425h8tkfyurhj85gj0h9wy8trflh5dcey73cp5ngu35tg3rr3v0nh7gvtucgjvguwrkc3ef6p4wvsdpsssl5uzp4"] # smolStaking fulladdr (see below)
+
+[storage]
+type = "Redis"
+connection_params = "redis://127.0.0.1:6379"
+
+[intersect]
+type = "Point"
+
+value = [70724778, "ff1b93cdfd997d4ea93e7d930908aa5905d788fe9efb4f95a8e01856d2872e18"] # Previous slotNo and block hash (see below)
+
+[chain]
+type = "Mainnet"
+
+[policy]
+missing_data = "Warn"
+
+
+################################################################################
+## smolStaking demo with full address (cexplorer and cardanoscan links)
+################################################################################
+
+# Address: addr1qxkwuk0fsg425h8tkfyurhj85gj0h9wy8trflh5dcey73cp5ngu35tg3rr3v0nh7gvtucgjvguwrkc3ef6p4wvsdpsssl5uzp4
+# Asset: EquinePioneerHorse08223 (asset12qc0uy9vl9ts4e9epqhahn6uvj3h88lj64c8hk)
+
+# cardanoscan - Address: https://cardanoscan.io/address/01acee59e9822aaa5cebb249c1de47a224fb95c43ac69fde8dc649e8e0349a391a2d1118e2c7cefe4317cc224c471c3b62394e8357320d0c21
+# cardanoscan - Asset: https://cardanoscan.io/token/5030fe10acf9570ae4b9082fdbcf5c64a3739ff2
+# cardanoscan - Last asset transaction details: https://cardanoscan.io/transaction/4d8ba91a8c1daebf8ca6c1066e46f50592ff10ad993074e44ac67db433803ca2
+
+# cexplorer - Address: https://cexplorer.io/address/addr1qxkwuk0fsg425h8tkfyurhj85gj0h9wy8trflh5dcey73cp5ngu35tg3rr3v0nh7gvtucgjvguwrkc3ef6p4wvsdpsssl5uzp4
+# cexplorer - Asset: https://cexplorer.io/asset/asset12qc0uy9vl9ts4e9epqhahn6uvj3h88lj64c8hk/preview#data
+# cexplorer - Last asset transaction details: https://cexplorer.io/tx/4d8ba91a8c1daebf8ca6c1066e46f50592ff10ad993074e44ac67db433803ca2
+
+# tx slot of last asset transaction: 70724850
+
+# previous slot number: 70724778
+# previous slot link:  https://cexplorer.io/block/ff1b93cdfd997d4ea93e7d930908aa5905d788fe9efb4f95a8e01856d2872e18
+# previous block hash: ff1b93cdfd997d4ea93e7d930908aa5905d788fe9efb4f95a8e01856d2872e18
