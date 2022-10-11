@@ -10,7 +10,7 @@ path = "data/cardano-node-mainnet/node.socket"
 
 [[reducers]]
 type = "UtxoByAddress"
-key_prefix = "smol_staking" # Use this in redis-cli to find keys
+# key_prefix = "smol_staking" # Use this in redis-cli to find keys
 filter = ["stake1uy6f5wg695g33ck8emlyx97vyfxyw8pmvgu5aq6hxgxscgg9s58ah"]
 
 # [[reducers]]
