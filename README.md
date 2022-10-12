@@ -103,6 +103,29 @@
 # Notes
 OpenAPI generated clients are experimental and (most likely) won't work.
 
+# Experiment notes
+### Scroll - smolAddress
+
+[[reducers]]
+type = "UtxoByAddress"
+key_prefix = "c1"
+filter = ["addr1qxkwuk0fsg425h8tkfyurhj85gj0h9wy8trflh5dcey73cp5ngu35tg3rr3v0nh7gvtucgjvguwrkc3ef6p4wvsdpsssl5uzp4"] # smolStaking fulladdr (see below)
+
+[intersect]
+type = "Point"
+value = [39916796, "e72579ff89dc9ed325b723a33624b596c08141c7bd573ecfff56a1f7229e4d09"] # Last mary block 
+
+result before block 42700000:
+
+127.0.0.1:6379> SMEMBERS "c1.addr1qxkwuk0fsg425h8tkfyurhj85gj0h9wy8trflh5dcey73cp5ngu35tg3rr3v0nh7gvtucgjvguwrkc3ef6p4wvsdpsssl5uzp4"
+1) "e1af9a709cf162a21ca78c9c7f3512a8915813cbd7be86f4665c6f84b98e4a1a#0"
+2) "60344374a074e641b7b31f6c6d316fe92be93b5480c3102e5bcd4261ec91e559#6"
+3) "72f7d40eb9d0e50b4af9d7f18e533314a9d3e56f7e037f0d97e9bd0215f4e8ad#9"
+4) "cd4daa21701fe658f5c6d8c81e825b205c6b465fd41af609da0230bf31baad06#2"
+5) "f78ae22661a25cf3990287cdb93f478ffd46f3b8c4ca9263b050cf3db6935551#0"
+6) "a471cb222ce051ad34388587638ee431e0cab801c535638349a61ddea1bc496c#0"
+
+
 # To-do (and probably, wont-do)
 - Proper nixification
 - Benchmarks
