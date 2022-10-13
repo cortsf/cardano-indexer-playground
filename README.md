@@ -96,9 +96,11 @@
 
 #### Redis-cli
 - Get all keys: KEYS *
-- Get keys: SMEMBERS c1.addr1w8tqqyccvj7402zns2tea78d42etw520fzvf22zmyasjdtsv3e5rz
+- Get type of key: TYPE <key>
+- Get set members: SMEMBERS <key>
+- Get string: GET <key>
 - Clear database: FLUSHDB
-- Clear ALL databases:  FLUSHALL
+- Clear all databases:  FLUSHALL
 
 # Notes
 OpenAPI generated clients are experimental and (most likely) won't work.
