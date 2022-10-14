@@ -1,0 +1,27 @@
+# [source]
+# type = "N2N"
+# address = "testnet-node.world.dev.cardano.org:30000"
+
+[source]
+type = "N2C"
+path = "data/cardano-node-testnet/node.socket"
+
+[[reducers]]
+type = "UtxoByAddress"
+key_prefix = "c1"
+filter = ["addr_test1qp48kq895l42yxeh7mlysajeec4r7th90500vah9c3ynequn23rdjcupjftuerpd4mrz4zenvnk46uh3v0g9l7ff0k0q5s88x7"]
+
+[[reducers]]
+type = "PointByTx"
+key_prefix = "c2"
+
+[storage]
+type = "Redis"
+connection_params = "redis://127.0.0.1:6379"
+
+[chain]
+type = "Testnet"
+
+[intersect]
+type = "Point"
+value = [62510369, "d931221f9bc4cae34de422d9f4281a2b0344e86aac6b31eb54e2ee90f44a09b9"] # last alonzo block
