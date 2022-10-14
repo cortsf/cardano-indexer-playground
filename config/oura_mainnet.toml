@@ -1,0 +1,29 @@
+######################################## Source
+[source]
+type = "N2C"
+address = ["Unix", "./data/cardano-node-mainnet/node.socket"]
+magic = "mainnet"
+
+[source.intersect]
+type = "Point"
+value = [48896539, "5d1f1b6149b9e80e0ff44f442e0cab0b36437bb92eacf987384be479d4282357"]
+
+[source.mapper]
+include_transaction_details = true
+include_block_cbor = true
+
+######################################## Filter
+
+[[filters]]
+type = "Selection"
+
+[filters.check]
+predicate = "variant_in"
+argument = ["Transaction"]
+
+######################################## Sink
+
+[sink]
+type = "Terminal"
+throttle_min_span_millis = 500
+wrap = true
