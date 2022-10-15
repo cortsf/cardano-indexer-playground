@@ -12,16 +12,16 @@ address = "relays-new.cardano-mainnet.iohk.io:3001"
 type = "Sled"
 db_path = "data/scrolls/sled_db"
 
-# [[reducers]]
-# type = "UtxoByAddress"
-# key_prefix = "c1"
+[[reducers]]
+type = "UtxoByAddress"
+key_prefix = "c1"
 # filter = ["addr1qxkwuk0fsg425h8tkfyurhj85gj0h9wy8trflh5dcey73cp5ngu35tg3rr3v0nh7gvtucgjvguwrkc3ef6p4wvsdpsssl5uzp4"] # smolStaking fulladdr (see below)
 
-[[reducers]]
-type = "TxCountByAddress"
+# [[reducers]]
+# type = "TxCountByAddress"
 
-[[reducers]]
-type = "TxByHash"
+# [[reducers]]
+# type = "TxByHash"
 # filter = ["addr1qxkwuk0fsg425h8tkfyurhj85gj0h9wy8trflh5dcey73cp5ngu35tg3rr3v0nh7gvtucgjvguwrkc3ef6p4wvsdpsssl5uzp4"]
 
 [storage]
