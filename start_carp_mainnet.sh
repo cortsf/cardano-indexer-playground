@@ -14,6 +14,6 @@ export PGPASSFILE="$(realpath carp/secrets/.pgpass)"
 export DATABASE_URL=postgresql://${PGUSER}:${PGPASSWORD}@${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_DB}
 export PGURI=$DATABASE_URL
 
-./bin/carp --plan ./repos/carp/indexer/execution_plans/default.toml
 # ./bin/carp --start-block "18750593c67f637725a90d2161fad09f1093c6d048c43492d0f9603797ea55aa" --plan ./repos/carp/indexer/execution_plans/default.toml
+./bin/carp --plan ./repos/carp/indexer/execution_plans/default.toml
 
